@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="definitions_0he3wqo" name="definitions" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="8.3.0">
+  <decision id="decision_0fgx2kf" name="TABLE1">
+    <decisionTable id="decisionTable_0avh1k6">
+      <input id="input1" label="TRYOUTINPUT">
+        <inputExpression id="inputExpression1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="TRYPOUT POUTPUT1" name="" typeRef="string" />
+      <rule id="DecisionRule_0hehasp">
+        <description>rrrrrrrrrrrrrrrrrrr</description>
+        <inputEntry id="UnaryTests_0jf8jmi">
+          <text>111111111</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j5cpox">
+          <text>11111111</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0exqz3f">
+        <description>2222222222223333333</description>
+        <inputEntry id="UnaryTests_0du7ep9">
+          <text>222222222233333333333333</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0m8lptk">
+          <text>2222222233333</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mfyrgq">
+        <description>4444444444444</description>
+        <inputEntry id="UnaryTests_0ztz7sj">
+          <text>4444444444444</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06qqq34">
+          <text>4444444444444</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_187jb6r">
+        <description>555555555</description>
+        <inputEntry id="UnaryTests_0rs1gu2">
+          <text>555555555</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n2egb0">
+          <text>555555555555</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_0z8wb8g" name="TABLE4444444">
+    <decisionTable id="DecisionTable_0f7m5uw">
+      <input id="InputClause_1tiiinq">
+        <inputExpression id="LiteralExpression_1sbz5m2" typeRef="string" />
+      </input>
+      <output id="OutputClause_18k72rm" typeRef="string" />
+    </decisionTable>
+  </decision>
+  <decision id="Decision_09rwc5o" name="TABLE 5">
+    <decisionTable id="DecisionTable_0wumx30">
+      <input id="InputClause_12inbdq" label="IIJIJIJI">
+        <inputExpression id="LiteralExpression_1sx0gzs" typeRef="string" />
+      </input>
+      <input id="InputClause_0lr7hm4" label="ASDASDASD">
+        <inputExpression id="LiteralExpression_0wyxe7w" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_1s2aqbt" label="ASDASDAD" typeRef="string" />
+      <rule id="DecisionRule_1q64sah">
+        <description>ASDKJASHDJAHSJDASKJ</description>
+        <inputEntry id="UnaryTests_1ockyyu">
+          <text>ASDASDASD</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mumtf4">
+          <text>ASDASDASD</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0svster">
+          <text>ASDASDASDASDA</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_03d2sjv">
+      <dmndi:DMNShape id="DMNShape_070yp3f" dmnElementRef="decision_0fgx2kf">
+        <dc:Bounds height="80" width="180" x="150" y="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1esvhzj" dmnElementRef="Decision_0z8wb8g">
+        <dc:Bounds height="80" width="180" x="550" y="140" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0tt0wp5" dmnElementRef="Decision_09rwc5o">
+        <dc:Bounds height="80" width="180" x="240" y="280" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

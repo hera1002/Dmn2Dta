@@ -1,6 +1,8 @@
-import newDiagram from '../resources/diagram11.dmn';
+import newDiagram from '../resources/diagram13.dmn';
 
-import diagcomp from '../resources/diagram13.dmn'
+import comp1 from '../resources/diagram.dmn'
+
+import comp2 from '../resources/diagram1.dmn'
 
 import DmnModeler from 'dmn-js/lib/Modeler';
 
@@ -8,24 +10,27 @@ import fileDrop from 'file-drops';
 
 import { migrateDiagram } from '@bpmn-io/dmn-migrate';
 
-import DmnModdle from 'dmn-moddle';
-
 const dmnModeler = new DmnModeler({
   container: '#canvas'
 });
 
+
+var contElement = document.querySelector("#container");
+var canElement = document.querySelector("#canvas");
+var panElement = document.querySelector("#panel");
+
+
 // (1) import DMN diagram
 async function importXML(xml) {
-
+  contElement.style.display="none";
   // (1.1) migrate to DMN 1.3 if necessary
   xml = await migrateDiagram(xml);
-
   // (1.2) import DMN 1.3 diagram
   dmnModeler.importXML(xml, err => {
     if (err) {
       console.error(err);
     }
-    var activeEditor = dmnModeler.getActiveViewer();
+      var activeEditor = dmnModeler.getActiveViewer();
 
     // access active editor components
     var canvas = activeEditor.get('canvas');
@@ -79,37 +84,51 @@ document.querySelector('#save-dmn').addEventListener('click', function (e) {
 
 //LOAD COMPARE PAGE
 document.querySelector('#compare-xml').addEventListener('click', function (e) {
-  alert('asdasdasd');
+  
   e.stopPropagation();
   e.preventDefault();
   console.log('in click funvtion');
   loadXmlDiagrams();
 });
 
+
+
 // load two xml for Comparison
-/* function loadXmlDiagrams() {
+ function loadXmlDiagrams() {
   console.log('loadfunction');
-  var xml1 = (newDiagram);
-  new DmnModdle().fromXML(xml1, function (err, adefs) {
-    alert('changed');
-    if (err) {
-      alert('errorin first xmlload');
-      console.log(err);
-    }
-    var xml2 = (diagcomp);
- 
-    new DmnModdle().fromXML(xml2, function (err, bdefs) {
-      alert('second');
-      if (err) {
-        return err;
-      } else {
-        return  adefs;
-      }
-    });
+  canElement.style.display="none";
+  panElement.style.display="none";
+  contElement.style.display="block";
+  var xml1 = (comp1);
+  var xml2 = (comp2);
+  const dmnModeler1 = new DmnModeler({
+    container: '#canvas-left'
   });
+  const dmnModeler2 = new DmnModeler({
+    container: '#canvas-right'
+  });
+  
+  dmnModeler1.importXML(xml1, err => {
+    if (err) {
+      console.error(err);
+    }
+    var activeEditor = dmnModeler.getActiveViewer();
+
+    // access active editor components
+    var canvas = activeEditor.get('canvas-left');
+
+    canvas.zoom('fit-viewport');
+
+  });
+
+  dmnModeler2.importXML(xml2, err => {
+    if (err) {
+      console.error(err);
+    }
+  });
+
 }
 
-*/
 
 // Tab functionality 
 /*

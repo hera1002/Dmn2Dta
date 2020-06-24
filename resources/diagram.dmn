@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="definitions_0he3wqo" name="definitions" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="8.3.0">
+  <decision id="decision_0fgx2kf" name="TABLE1">
+  
+  
+    <decisionTable id="decisionTable_0avh1k6">
+      <input id="input1" label="TRYOUTINPUT">
+        <inputExpression id="inputExpression1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1orn2su" label="TRYOUTINPUT2">
+        <inputExpression id="LiteralExpression_1bjscf2" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output1" label="TRYPOUT POUTPUT1" name="" typeRef="string" />
+      <rule id="DecisionRule_0hehasp">
+        <description>rrrrrrrrrrrrrrrrrrr</description>
+        <inputEntry id="UnaryTests_0jf8jmi">
+          <text>111111111</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mmc8st">
+          <text>11111111</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1j5cpox">
+          <text>11111111</text>
+    </outputEntry>
+  
+  
+  
+      </rule>
+      <rule id="DecisionRule_0exqz3f">
+        <description>222222222222</description>
+        <inputEntry id="UnaryTests_0du7ep9">
+          <text>2222222222</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zcmg4i">
+          <text>222222222</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0m8lptk">
+          <text>22222222</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h3ol51">
+        <description>22222222222222222</description>
+        <inputEntry id="UnaryTests_179ocs8">
+          <text>2222222222333333</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03yfmps">
+          <text>22222222222222</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hzkbfe">
+          <text>222222222222222</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mfyrgq">
+        <description>4444444444444</description>
+        <inputEntry id="UnaryTests_0ztz7sj">
+          <text>4444444444444</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06q6et3">
+          <text>44444444444444</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06qqq34">
+          <text>4444444444444</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_1yjq01n" name="TABLE 2">
+    <decisionTable id="DecisionTable_1taqhh8">
+      <input id="InputClause_1oxyfe0" label="T2 INPUT1">
+        <inputExpression id="LiteralExpression_1hwxlv9" typeRef="string" />
+      </input>
+      <input id="InputClause_0uj4jkg" label="T2INPUT2">
+        <inputExpression id="LiteralExpression_1wetk3m" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_1t0eqaq" label="T2OUTPU2" typeRef="string" />
+      <output id="OutputClause_0p4l8pq" label="T2OUTPUT2" typeRef="string" />
+      <rule id="DecisionRule_18wlhz7">
+        <description>hgjhgjhgjhggjhg</description>
+        <inputEntry id="UnaryTests_1cmguyk">
+          <text>HGHHJGHJGH</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m0qn4a">
+          <text>hghjggjhgjhgjhghghjg</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1p5ck8a">
+          <text>gjhghjghjgjhgjhghjg</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_18qrsy3">
+          <text>gjhgjhgjhgjhgjhgjhg</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Decision_0z8wb8g" name="TABLE3">
+    <decisionTable id="DecisionTable_0f7m5uw">
+      <input id="InputClause_1tiiinq" label="HJGASDJGAHSDH">
+        <inputExpression id="LiteralExpression_1sbz5m2" typeRef="string" />
+      </input>
+      <output id="OutputClause_18k72rm" label="JHHJKJKHJKHASD" typeRef="string" />
+      <rule id="DecisionRule_1et6vet">
+        <description>HAKJSHDJHKJASDHAS</description>
+        <inputEntry id="UnaryTests_1soe59h">
+          <text>JAHSDKJJASHDKJASH</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1u4he1e">
+          <text>HJKAHSJDHKJASHDHJ</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0dascbp">
+        <description>AKAJSFDKLSAKLJDFJSDKLF</description>
+        <inputEntry id="UnaryTests_0ef8a55">
+          <text>ASFKLJSFDKLJASLKFD</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16h9nvs">
+          <text>AFDKLAJSKFDSKAJSFDK</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_03d2sjv">
+      <dmndi:DMNShape id="DMNShape_070yp3f" dmnElementRef="decision_0fgx2kf">
+        <dc:Bounds height="80" width="180" x="150" y="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1vnpx9z" dmnElementRef="Decision_1yjq01n">
+        <dc:Bounds height="80" width="180" x="190" y="270" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1esvhzj" dmnElementRef="Decision_0z8wb8g">
+        <dc:Bounds height="80" width="180" x="550" y="140" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
